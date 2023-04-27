@@ -1,7 +1,5 @@
-import React from "react";
 import "./App.css";
 import Heading from "./Components/Heading/Heading";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import Board from "./Components/Board/Board";
 import { rootState } from "./Components/interface";
@@ -12,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Heading type="h1" text="Wordiee" />
-      <Heading type="subtitle" text="Another Wordle Clone" />
+      {/* <Heading type="subtitle" text="Another Wordle Clone" /> */}
       <div className="board-container">
         <Board board={board} />
       </div>
